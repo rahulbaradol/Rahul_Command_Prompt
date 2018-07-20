@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="200.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FunctionCalculationMainController">
+   <children>
+      <JFXTextField fx:id="tf1" focusColor="#00f228" layoutX="16.0" layoutY="14.0" prefHeight="36.0" prefWidth="209.0" promptText="Enter the First Number" unFocusColor="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tf2" focusColor="#00f228" layoutX="16.0" layoutY="64.0" prefHeight="36.0" prefWidth="209.0" promptText="Enter the Second Number" unFocusColor="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="23.0" layoutY="123.0" onAction="#Subtract" prefHeight="44.0" prefWidth="93.0" style="-fx-background-color: green;" text="Subtract" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="output" alignment="CENTER" layoutX="126.0" layoutY="123.0" prefHeight="44.0" prefWidth="105.0" text="Output" />
+   </children>
+</AnchorPane>

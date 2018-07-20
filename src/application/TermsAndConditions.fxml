@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TermsAndConditionsMainController">
+   <children>
+      <Label layoutX="103.0" layoutY="29.0" text="Terms and Conditions">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="84.0" text="1. Please follow the application rules and obey what it says">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="124.0" text="2. Update and Keep the application up to date, if you want">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="154.0" text="the application to work correctly">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="200.0" text="3. Don't force close the app. Or it can crash">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="250.0" text="Will you agree this conditions?" />
+      <JFXButton fx:id="na" layoutX="27.0" layoutY="336.0" onAction="#IdonotAgree" text="I do not Agree" />
+      <JFXButton fx:id="a" layoutX="313.0" layoutY="336.0" onAction="#IAgree" text="I Agree" />
+      <Label fx:id="AorNCheck" layoutX="116.0" layoutY="340.0" prefHeight="17.0" prefWidth="194.0" />
+   </children>
+</AnchorPane>

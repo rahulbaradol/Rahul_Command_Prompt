@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CommandPromptScreen" onMouseEntered="#mouseEntered" onMouseExited="#mouseExited" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CommandPromptMainController">
+   <children>
+      <Label layoutX="219.0" layoutY="22.0" text="Command Prompt" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="tfc" focusColor="#00f5e0" layoutX="69.0" layoutY="71.0" onKeyTyped="#mouseTypingTextArea" onMouseClicked="#mouseClickedTextArea" onMouseEntered="#mouseEnteredTextArea" onMouseExited="#mouseExitedTextArea" prefHeight="85.0" prefWidth="464.0" promptText="Enter your cammand here" text="Command:" unFocusColor="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton fx:id="Help" layoutX="553.0" layoutY="18.0" onAction="#Help" text="?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="500.0" layoutY="200.0" onAction="#Command" onMouseClicked="#mouseClickedDoneButton" prefHeight="46.0" prefWidth="71.0" style="-fx-background-color: blue;" text="Done" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="42.0" layoutY="200.0" onAction="#Exit" onMouseClicked="#mouseClickedExitButton" prefHeight="46.0" prefWidth="71.0" style="-fx-background-color: blue;" text="Exit" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="MainClear" layoutX="268.0" layoutY="200.0" onAction="#Clear" onMouseClicked="#mouseClickedClearButton" prefHeight="46.0" prefWidth="71.0" style="-fx-background-color: blue;" text="Clear" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="md" layoutX="354.0" layoutY="369.0" prefHeight="17.0" prefWidth="233.0" />
+      <JFXTextArea fx:id="commandLog" editable="false" focusColor="#14d721" layoutX="14.0" layoutY="325.0" prefHeight="61.0" prefWidth="299.0" promptText="Command Proccess Line" text="Successfully started Command Prompt. Waiting for input....." unFocusColor="#0d0d0d" />
+      <JFXButton layoutX="14.0" layoutY="18.0" onAction="#StartQuestionPrompt" text="QM" textFill="#0a0a0a" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="QuestionPrompt" onMouseEntered="#MouseEnteredPromptArea" onMouseExited="#MouseExitedPromptArea" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.QuestionAskingMainController">
+   <children>
+      <Label layoutX="217.0" layoutY="16.0" text="Question Prompt" underline="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="Question" focusColor="#08e434" layoutX="69.0" layoutY="71.0" onKeyTyped="#TypedInTextAreaButton" onMouseClicked="#MouseClickedTextArea" onMouseEntered="#MouseEnteredTextArea" onMouseExited="#MouseExitedTextArea" prefHeight="88.0" prefWidth="464.0" promptText="Enter your question" text="Question: " unFocusColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton layoutX="488.0" layoutY="208.0" onAction="#AskQuestion" onMouseClicked="#MouseClickedAskButton" prefHeight="51.0" prefWidth="90.0" style="-fx-background-color: green;" text="Ask" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="24.0" layoutY="208.0" onAction="#Reset" onMouseClicked="#MouseClickedResetButton" prefHeight="51.0" prefWidth="90.0" style="-fx-background-color: green;" text="Reset" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="556.0" layoutY="13.0" onAction="#Help" text="?">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="Mouse" layoutX="339.0" layoutY="357.0" prefHeight="29.0" prefWidth="247.0" />
+      <JFXTextArea fx:id="QuestionLine" editable="false" focusColor="#00ff4d" layoutX="18.0" layoutY="308.0" prefHeight="78.0" prefWidth="294.0" text="Successfully Started: Question Prompt........." unFocusColor="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton layoutX="14.0" layoutY="18.0" onAction="#StartCommandPrompt" text="CM" textFill="#0a0a0a" />
+   </children>
+</AnchorPane>

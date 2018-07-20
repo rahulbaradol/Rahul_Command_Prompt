@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CubeFinderMainController">
+   <children>
+      <Label layoutX="136.0" layoutY="14.0" text="Cube Finder" underline="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="base" focusColor="#0be445" layoutX="24.0" layoutY="94.0" prefHeight="35.0" prefWidth="257.0" promptText="Enter the base" unFocusColor="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="293.0" layoutY="84.0" text="3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="301.0" layoutY="338.0" onAction="#Cube" prefHeight="48.0" prefWidth="83.0" style="-fx-background-color: green;" text="Cube" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="17.0" layoutY="338.0" onAction="#Reset" prefHeight="48.0" prefWidth="83.0" style="-fx-background-color: green;" text="Reset" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Show" layoutX="317.0" layoutY="143.0" onAction="#Show" prefHeight="41.0" prefWidth="67.0" style="-fx-background-color: green;" text="Show" textFill="WHITE" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="352.0" layoutY="14.0" onAction="#Help" prefHeight="35.0" prefWidth="34.0" text="?">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

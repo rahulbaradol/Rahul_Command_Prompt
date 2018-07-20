@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FolderAndFileMakerMainController">
+   <children>
+      <TabPane prefHeight="398.0" prefWidth="397.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Folder Maker">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="MFolder_Location" focusColor="#09eb36" layoutX="25.0" layoutY="23.0" prefHeight="28.0" prefWidth="327.0" promptText="Where to create?" unFocusColor="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="MFolder_Name" focusColor="#09eb36" layoutX="25.0" layoutY="60.0" prefHeight="28.0" prefWidth="327.0" promptText="Name of the folder" unFocusColor="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton layoutX="300.0" layoutY="304.0" onAction="#CreateFolder" prefHeight="45.0" prefWidth="83.0" style="-fx-background-color: green;" text="Create" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="14.0" layoutY="304.0" onAction="#Clear_Folder" prefHeight="45.0" prefWidth="83.0" style="-fx-background-color: green;" text="Clear" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="File Maker">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="MFile_Location" focusColor="#07eb3c" layoutX="25.0" layoutY="23.0" prefHeight="25.0" prefWidth="327.0" promptText="Where to create?" unFocusColor="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="MFile_Name" focusColor="#07eb3c" layoutX="25.0" layoutY="60.0" prefHeight="25.0" prefWidth="327.0" promptText="Name of the file" unFocusColor="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton layoutX="300.0" layoutY="304.0" onAction="#CreateFile" prefHeight="45.0" prefWidth="83.0" style="-fx-background-color: green;" text="Create" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="14.0" layoutY="304.0" onAction="#Clear_File" prefHeight="45.0" prefWidth="83.0" style="-fx-background-color: green;" text="Clear" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXTextField fx:id="MFile_Extension" focusColor="#09eb32" layoutX="300.0" layoutY="110.0" prefHeight="25.0" prefWidth="83.0" promptText=".extension" unFocusColor="WHITE" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
